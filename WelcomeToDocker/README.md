@@ -4,7 +4,7 @@
 docker version
 ```
 
-![alt text](/img/1.png)
+![alt text](/WelcomeToDocker/img/1.png)
 
 ## Подготовка Docker (чтобы начать работать с “чистого листа”)
 Остановить все запущенные контейнеры
@@ -31,7 +31,7 @@ docker container prune $(docker ps -q)
 ```bash
 docker ps -a
 ```
-![alt text](/img/2.png)
+![alt text](/WelcomeToDocker/img/2.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```bash
@@ -72,7 +72,7 @@ docker restart c4d56c24da4f
 ```bash
 docker rm welcome-to-docker
 ```
-![alt text](/img/3.png)
+![alt text](/WelcomeToDocker/img/3.png)
 
 И можно удалить ещё и образ загруженного ранее welcome-to-docker:
 
@@ -84,7 +84,7 @@ docker images
 ```bash
 docker rmi c4d56c24da4f
 ```
-![alt text](/img/4.png)
+![alt text](/WelcomeToDocker/img/4.png)
 
 ## Проверить работу контейнера
 
@@ -96,7 +96,7 @@ docker run -d -p 8088:80 --name welcome-to-docker docker/welcome-to-docker
 ```bash
 docker images
 ```
-![alt text](/img/5.png)
+![alt text](/WelcomeToDocker/img/5.png)
 
 Показать только запущенные контейнеры
 ```bash
@@ -106,7 +106,7 @@ docker ps
 ```bash
 docker ps -a
 ```
-![alt text](/img/6.png)
+![alt text](/WelcomeToDocker/img/6.png)
 
 ## Показать работающий Welcome to Docker
 
@@ -121,7 +121,7 @@ netstat -aon | findstr :8088
 ```
 Открыть http://localhost:8088 в браузере
 
-![alt text](/img/12.png)!!!!!!!!!!
+![alt text](/WelcomeToDocker/img/12.png)!!!!!!!!!!
 
 ## Управление контейнером
 Мониторинг контейнеров
@@ -137,7 +137,7 @@ docker inspect welcome-to-docker
 ```bash
 docker stats
 ```
-![alt text](/img/7.png)
+![alt text](/WelcomeToDocker/img/7.png)
 
 Получить лог контейнера
 ```bash
@@ -147,7 +147,7 @@ docker logs welcome-to-docker
 ```bash
 docker logs -f welcome-to-docker
 ```
-![alt text](/img/8.png)
+![alt text](/WelcomeToDocker/img/8.png)
 
 Остановить контейнер
 ```bash
@@ -182,14 +182,14 @@ docker exec -it welcome-to-docker sh
 uname -a
 ```
 
-![alt text](/img/9.png)
+![alt text](/WelcomeToDocker/img/9.png)
 
 Получить больше информации об ОС контейнера
 ```bash
 cat /etc/os-release
 ```
 
-![alt text](/img/10.png)
+![alt text](/WelcomeToDocker/img/10.png)
 
 Выйти из контейнера можно командой exit
 
