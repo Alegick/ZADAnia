@@ -87,7 +87,8 @@ cd "$TEACHER_REPO"
 git pull
 
 echo "📁 Копирование файлов из mfua в PITPO (без .git)..."
-rsync -a --delete --exclude='.git' "$TEACHER_REPO/" "$MY_REPO/"
+rsync -a --exclude='.git' "$TEACHER_REPO/" "$MY_REPO/"
+
 
 echo "✅ Файлы скопированы. Подготовка коммита в PITPO..."
 cd "$MY_REPO"
