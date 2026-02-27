@@ -77,3 +77,12 @@ http://localhost:8083
  ![контейнер запустился](/cAdvisor/img/8.png)
  ![контейнер запустился](/cAdvisor/img/9.png)
 
+
+## Демонстрация cAdvisor (интерактивная)
+
+<a href="/cAdvisor/cAdvisor-demo.mhtml">
+  <img src="/cAdvisor/img/cadvisor_thumbnail.png" alt="Открыть cAdvisor" width="100%">
+</a>
+
+> Кликни на картинку — откроется **полная интерактивная страница** cAdvisor со всеми графиками и контейнерами.
+
