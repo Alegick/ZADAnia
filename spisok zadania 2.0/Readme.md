@@ -32,7 +32,7 @@ docker container prune $(docker ps -q)
 ```bash
 docker ps -a
 ```
-![alt text](/img/17.png)
+![alt text](./img/17.png)
 
 - Опционально можно удалить ненужные образы. Показать текущие образы:
 ```bash
@@ -68,13 +68,13 @@ docker run -d --name my-apache -p 8090:80 httpd:latest
 
 Должна отобразиться страница "It works!"
 
-![фе](/img/1.png)
+![фе](./img/1.png)
 
 ### Своя страница
 ```bash
 docker exec my-apache sh -c 'echo "<h1>My Apache Server</h1>" > /usr/local/apache2/htdocs/index.html'
 ```
-![фе](/img/2.png)
+![фе](./img/2.png)
 
 ### Остановка
 ```bash
@@ -107,13 +107,13 @@ docker run -d \
 
 Дождаться загрузки (~2-3 минуты), затем пройти начальную настройку.
 
-![фе](/img/3.png)
+![фе](./img/3.png)
 
 ### Логи запуска
 ```bash
 docker logs -f my-jira
 ```
-![фе](/img/4.png)
+![фе](./img/4.png)
 
 ### Остановка
 ```bash
@@ -164,7 +164,7 @@ MSYS_NO_PATHCONV=1 docker run -d --name my-static-site -p 8092:80 -v "$(pwd)/my-
 
 Открыть в браузере: http://localhost:8092
 
-![фе](/img/5.png)
+![фе](./img/5.png)
 
 ### Остановка
 ```bash
@@ -192,13 +192,13 @@ MSYS_NO_PATHCONV=1 docker run -d --name metasploitable2 -p 8093:80 tleemcjr/meta
 
 Открыть в браузере: http://localhost:8093
 
-![фе](/img/6.png)
+![фе](./img/6.png)
 
 ### Логи
 ```bash
 docker logs metasploitable2
 ```
-![фе](/img/7.png)
+![фе](./img/7.png)
 
 ### Остановка
 ```bash
@@ -231,7 +231,7 @@ x = [i**2 for i in range(10)]
 print(x)
 exit()
 ```
-![фе](/img/8.png)
+![фе](./img/8.png)
 
 ### Создать файл `app.py`
 ```python
@@ -244,7 +244,7 @@ for i in range(5):
 ```bash
 MSYS_NO_PATHCONV=1 docker run --rm -v "$(pwd)":/app python:latest python /app/app.py
 ```
-![фе](/img/9.png)
+![фе](./img/9.png)
 ### Остановка
 ```bash
 docker stop my-python
@@ -274,7 +274,7 @@ const arr = .map(x => x * 2)
 console.log(arr)
 .exit
 ```
-![фе](/img/10.png)
+![фе](./img/10.png)
 ### Создать файл `app.js`
 ```javascript
 console.log("Node.js работает в Docker!");
@@ -294,7 +294,7 @@ docker run -d --name my-node-app -p 3000:3000 \
 
 Открыть в браузере: http://localhost:3000
 
-![фе](/img/11.png)
+![фе](./img/11.png)
 
 ### Остановка
 ```bash
@@ -337,7 +337,7 @@ EXIT
 ```
 
 > Ожидаемый ответ на `PING` — `PONG`.
-![фе](/img/12.png)
+![фе](./img/12.png)
 ### Остановка
 ```bash
 docker stop my-redis
@@ -377,9 +377,9 @@ docker run -d \
 - http://localhost:8094
 - http://localhost:8094/hello.txt
 
-![фе](/img/13.png)
+![фе](./img/13.png)
 
-![фе](/img/14.png)
+![фе](./img/14.png)
 
 
 ### Остановка
@@ -419,7 +419,7 @@ docker run -d \
 
 > Логин по умолчанию — пользователь: `admin`, пароль: `admin`
 
-![фе](/img/15.png)
+![фе](./img/15.png)
 
 ### Загрузить файл
 1. Войти в интерфейс
